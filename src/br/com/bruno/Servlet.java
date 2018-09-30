@@ -2,7 +2,6 @@ package br.com.bruno;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Random;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +17,7 @@ public class Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private EstoqueProduto estoque;
 	private final int qtdProdutos = 2;
-	private final int qtdDeCadaProduto = 1000000;
+	private final int qtdDeCadaProduto = 2000000;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -31,15 +30,15 @@ public class Servlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/*protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+	}/*
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int tipoProduto = Integer.valueOf(request.getParameter("tipo"));
 		int qtdCompra = Integer.valueOf(request.getParameter("qtdCompra"));
 		
@@ -50,7 +49,7 @@ public class Servlet extends HttpServlet {
 			estoque.comprar(tipoProduto, qtdCompra);
 			writer.println("{\"compra\": true, \"TipoProduto\": " + tipoProduto + ", \"QuantidadeProduto\": " + produto.getQtd() + "}");
 		}catch(IllegalArgumentException e) {
-			e.getMessage();
+			e.printStackTrace();
 			writer.println("{'compra': false}");
 		}
 		writer.close();

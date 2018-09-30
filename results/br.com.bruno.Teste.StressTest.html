@@ -1,0 +1,154 @@
+<h1>br.com.bruno.Teste.StressTest</h1>
+<p>Teste pra testar concorrencia ao comprar um mesmo produto</p>
+<table width=100%>
+<tr>
+<th width=250>Observed state</th>
+<th width=50>Occurrence</th>
+<th width=50>Expectation</th>
+<th>Interpretation</th>
+</tr>
+<tr bgColor=#00ff00>
+<td>[90, 70, 40, 0]</td>
+<td align=center>279264</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor1 - actor2 - actor3 - actor4</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[90, 70, 0, 30]</td>
+<td align=center>163672</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor1 - actor2 - actor4 - actor3</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[90, 0, 20, 50]</td>
+<td align=center>76269</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor1 - actor4 - actor3 - actor2</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[90, 0, 60, 20]</td>
+<td align=center>192425</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor1 - actor3 - actor4 - actor2</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[90, 40, 60, 0]</td>
+<td align=center>120964</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor1 - actor3 - actor2 - actor4</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[90, 30, 0, 50]</td>
+<td align=center>46334</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor1 - actor4 - actor3 - actor2</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[70, 80, 40, 0]</td>
+<td align=center>84958</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor2 - actor1 - actor3 - actor4</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[40, 80, 50, 0]</td>
+<td align=center>105192</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor2 - actor3 - actor1 - actor4</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[70, 80, 0, 30]</td>
+<td align=center>30373</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor2 - actor1 - actor4 - actor3</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[0, 80, 50, 10]</td>
+<td align=center>133540</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor2 - actor3 - actor4 - actor1</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[0, 80, 10, 40]</td>
+<td align=center>74769</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor2 - actor4 - actor3 - actor1</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[30, 80, 0, 40]</td>
+<td align=center>59441</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor2 - actor4 - actor1 - actor3</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[0, 10, 70, 30]</td>
+<td align=center>76927</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor3 - actor4 - actor2 - actor1</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[60, 0, 70, 20]</td>
+<td align=center>63091</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor3 - actor1 - actor4 - actor2</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[20, 0, 70, 30]</td>
+<td align=center>36655</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor3 - actor4 - actor1 - actor2</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[40, 50, 70, 0]</td>
+<td align=center>41637</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor3 - actor2 - actor1 - actor4</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[0, 50, 70, 10]</td>
+<td align=center>86133</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor3 - actor2 - actor4 - actor1</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[60, 40, 70, 0]</td>
+<td align=center>16589</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor3 - actor1 - actor2 - actor4</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[50, 0, 20, 60]</td>
+<td align=center>10018</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor4 - actor1 - actor3 - actor2</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[20, 0, 30, 60]</td>
+<td align=center>14808</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor4 - actor3 - actor1 - actor2</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[30, 40, 0, 60]</td>
+<td align=center>8827</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor4 - actor2 - actor1 - actor3</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[0, 10, 30, 60]</td>
+<td align=center>40604</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor4 - actor3 - actor2 - actor1</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[0, 40, 10, 60]</td>
+<td align=center>12588</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor4 - actor2 - actor3 - actor1</td>
+</tr>
+<tr bgColor=#00ff00>
+<td>[50, 30, 0, 60]</td>
+<td align=center>5642</td>
+<td align=center>ACCEPTABLE</td>
+<td>actor4 - actor1 - actor2 - actor3</td>
+</tr>
+</table>

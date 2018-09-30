@@ -13,16 +13,12 @@ public class EstoqueProduto {
 		}
 	}
 	
-	public ArrayList<Produto> getProdutos(){
-		return this.produtos;
-	}
-	
 	public Produto getProduto(int index){
 		return produtos.get(index);
 	}
 	
-	public void comprar(int tipoProduto, int qtdCompra) {
+	public int comprar(int tipoProduto, int qtdCompra) {
 		Produto produto = produtos.get(tipoProduto);
-		produto.decrementar(qtdCompra);
+		return produto.decrementar(qtdCompra);
 	}
 }

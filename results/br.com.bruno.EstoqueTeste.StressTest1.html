@@ -1,0 +1,40 @@
+<h1>br.com.bruno.EstoqueTeste.StressTest1</h1>
+<p>Test racily getting long from HashMap</p>
+<table width=100%>
+<tr>
+<th width=250>Observed state</th>
+<th width=50>Occurrence</th>
+<th width=50>Expectation</th>
+<th>Interpretation</th>
+</tr>
+<tr bgColor=#00ff00>
+<td>[0, 1]</td>
+<td align=center>8056678</td>
+<td align=center>ACCEPTABLE</td>
+<td>get back long 0L and 1L</td>
+</tr>
+<tr bgColor=#ff0000>
+<td>[1, 1]</td>
+<td align=center>837869</td>
+<td align=center>FORBIDDEN</td>
+<td>FORBIDDEN</td>
+</tr>
+<tr bgColor=#ff0000>
+<td>[0, 0]</td>
+<td align=center>937324</td>
+<td align=center>FORBIDDEN</td>
+<td>FORBIDDEN</td>
+</tr>
+<tr bgColor=#ff0000>
+<td>[0, -1]</td>
+<td align=center>148756</td>
+<td align=center>FORBIDDEN</td>
+<td>FORBIDDEN</td>
+</tr>
+<tr bgColor=#ff0000>
+<td>[-1, 1]</td>
+<td align=center>111913</td>
+<td align=center>FORBIDDEN</td>
+<td>FORBIDDEN</td>
+</tr>
+</table>

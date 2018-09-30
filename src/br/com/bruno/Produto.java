@@ -24,14 +24,14 @@ public class Produto {
 		return qtd.get();
 	}
 	
-	public synchronized void decrementar(int decremento) {
-		for(int i = 0; i < decremento; i++) {
-			if(qtd.get() <= 0) {
-				throw new IllegalArgumentException("Estoque zerado!!");
-			}
-			else {
+	public synchronized int decrementar(int decremento) {
+		if(qtd.get() - decremento < 0) {
+			throw new IllegalArgumentException("Estoque zerado!!");
+		}else {
+			for(int i = 0; i < decremento; i++) {
 				qtd.decrementAndGet();
 			}
+			return qtd.get();
 		}
 	}
 }

@@ -7,8 +7,8 @@
 	<title>Walmart</title>
 </head>
 <body>
-    <h1>Seja Bem-vindo!</h1>
-	<form action="Compra" method="post">
+    <h1>WALMART</h1>
+	<form action="Compra" method="GET">
 	    Escolha o produto: <input type="text" id="tipo" name="tipo" size="5" ><br>
 	    Quantidade: <input type="text" id="qtdCompra" name="qtdCompra" size="5" ><br>
 	    <input type="submit" id="comprar" value="Comprar" />
